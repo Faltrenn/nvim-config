@@ -24,4 +24,6 @@ return require('packer').startup(function(use)
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
 	use "ThePrimeagen/harpoon"
+
+	use "tpope/vim-fugitive"
 end)
