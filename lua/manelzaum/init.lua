@@ -1,1 +1,2 @@
-print("Boa noite")
+require("manelzaum.remap")
+require("manelzaum.set")

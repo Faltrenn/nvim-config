@@ -1,2 +1,1 @@
-require("manelzaum.remap")
-require("manelzaum.packer")
+require("manelzaum")
