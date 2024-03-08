@@ -4,7 +4,6 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         -- or                            , branch = '0.1.x',
@@ -57,4 +56,14 @@ return require('packer').startup(function(use)
             'stevearc/dressing.nvim', -- optional for vim.ui.select
         },
     }
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function()
+            vim.g.mkdp_filetypes = {
+                "markdown" }
+        end,
+        ft = { "markdown" },
+    })
 end)
